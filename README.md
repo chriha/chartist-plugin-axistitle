@@ -26,6 +26,9 @@ var defaultOptions = {
   // Defines the anchoring of the title text. Possible values are 'start', 'end' and 'middle'.
   textAnchor: 'middle',
 
+  // Define a text color
+  textColor: '#ff0000',
+
   // Whether to flip the direction of the text. Note - This can only be used on axis Y.
   flipText : false
   

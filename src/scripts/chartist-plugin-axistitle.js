@@ -14,6 +14,7 @@
             y: 0
         },
         textAnchor: 'middle',
+        textColor: '#000000',
         flipText: false
     };
     
@@ -69,7 +70,8 @@
                     title.attr({
                         x: xPos + options.axisX.offset.x,
                         y: yPos + options.axisX.offset.y,
-                        "text-anchor": options.axisX.textAnchor
+                        "text-anchor": options.axisX.textAnchor,
+                        "fill": options.axisX.textColor
                     });
 
                     data.svg.append(title, true);
@@ -100,7 +102,8 @@
                         x: xPos + options.axisY.offset.x,
                         y: yPos + options.axisY.offset.y,
                         transform: transform,
-                        "text-anchor": options.axisY.textAnchor
+                        "text-anchor": options.axisY.textAnchor,
+                        "fill": options.axisY.textColor
                     });
 
                     data.svg.append(title, true);
